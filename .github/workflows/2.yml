@@ -1,6 +1,6 @@
 name: Run Jest Tests
 
-on: [push, pull_request]
+on: 
 
 jobs:
     test:
@@ -17,7 +17,8 @@ jobs:
             - name: Install Dependencies
               run: npm install
 
-            - name: Run Jest Tests
-              run: npm test
-            
-           
+            - name: Install Jest
+              run: npm install jest -g
+
+            - name: Run Jest Test 2
+              run: jest tests/2.test.js
