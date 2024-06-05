@@ -1,4 +1,4 @@
-name: Run Jest Tests 1
+name: Run Jest Tests 3
 
 on:
   push:
@@ -23,5 +23,5 @@ jobs:
             - name: Install Jest
               run: npm install jest -g
 
-            - name: Run Jest Test 1
-              run: jest tests/1.test.js
+            - name: Run Jest Test 3
+              run: jest tests/3.test.js
