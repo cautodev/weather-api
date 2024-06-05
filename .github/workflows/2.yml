@@ -1,6 +1,9 @@
 name: Run Jest Tests
 
-on: 
+on:
+  push:
+    branches:
+      - 'main'
 
 jobs:
     test:
